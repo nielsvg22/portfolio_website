@@ -4,52 +4,46 @@ import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
 const Technologies = () =>  (
-  <Section id="tech">
-    <SectionDivider divider />
+  <Section id='tech'>
+    <SectionDivider />
+    <br />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the web development world.
-      From Back-end To Design
+      I've worked with variants of technologies like JavaScript, React, Xcode, Java, Backend and Frontend
     </SectionText>
     <List>
       <ListItem>
-        <picture>
-          <DiReact size="3rem" />
-        </picture>
+        <DiReact size="5rem" />
         <ListContainer>
+        <ListParagraph>
           <ListTitle>Front-End</ListTitle>
-          <ListParagraph>
-            Experiece with <br />
+            Experiance with <br />
             React.js
-          </ListParagraph>
+        </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <picture>
-          <DiFirebase size="3rem" />
-        </picture>
+        <DiFirebase size="5rem" />
         <ListContainer>
+        <ListParagraph>
           <ListTitle>Back-End</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            Node and Databases
-          </ListParagraph>
+            Experiance with <br />
+            Json 
+        </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <picture>
-          <DiZend size="3rem" />
-        </picture>
+        <DiZend size="5rem" />
         <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            tools like Figma
-          </ListParagraph>
+        <ListParagraph>
+          <ListTitle>UX/UI</ListTitle>
+            Experiance with <br />
+            Wireframes 
+        </ListParagraph>
         </ListContainer>
       </ListItem>
+     
     </List>
-    <SectionDivider colorAlt />
   </Section>
 );
 

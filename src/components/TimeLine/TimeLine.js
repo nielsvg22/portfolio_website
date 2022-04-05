@@ -46,7 +46,8 @@ const Timeline = () => {
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-      The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+      I'm Niels van Gortel and i'm 21 years old. I started my code journey half a year ago with no knowledge at all. Now 6 months later is have been
+        learning so much, from starting with a console application in java to building a full stack app in java and javascript.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
@@ -60,7 +61,7 @@ const Timeline = () => {
                 active={activeItem}
                 onClick={(e) => handleClick(e, index)}>
                 <CarouselItemTitle>
-                  {`${item.year}`}
+                {item.year}
                   <CarouselItemImg
                     width="208"
                     height="6"
