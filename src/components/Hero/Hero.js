@@ -5,20 +5,18 @@ import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
 const Hero = (props) => (
-  <>
-    <Section row nopadding>
-      <LeftSection>
-        <SectionTitle main center>
-          Welcome To <br />
-          My Personal Portfolio
-        </SectionTitle>
-        <SectionText>
-        The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
-        </SectionText>
-        <Button onClick={props.handleClick}>Learn More</Button>
-      </LeftSection>
-    </Section>
-  </>
+ <Section row nopadding>
+   <LeftSection>
+     <SectionTitle main center>
+       Hello i'm Niels <br />
+       A Software Developer
+     </SectionTitle>
+     <SectionText>
+       I'm a beginning Software Developer, currently i'm learning to write code through the procces of agile and scrum.
+     </SectionText>
+     <Button onClick={() => window.location = 'https://github.com/'}>Learn More</Button>
+   </LeftSection>
+ </Section>
 );
 
 export default Hero;
